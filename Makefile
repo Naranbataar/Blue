@@ -1,5 +1,5 @@
 .POSIX:
-CFLAGS = -O3 -Wall -Wextra
+CFLAGS = -O3 -Wall -Wextra -D_XOPEN_SOURCE=500
 PREFIX = /usr/local
 main: main.c
 	$(CC) $(CFLAGS) src/* -Iinclude/ main.c -o blue
